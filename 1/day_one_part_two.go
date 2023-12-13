@@ -17,7 +17,6 @@ func check_error(e error) {
 
 
 func main() {
-	fmt.Println("Hello World")
 
 	// Get arguments
 	allArgs := os.Args
@@ -67,8 +66,8 @@ func main() {
 
 		// Acquired Numbers, get first and last and make "one" number
 
-		firstDigit := findDigitsForward.FindAllString(forwardString, -1)[0]
-		lastDigit := findDigitsBackward.FindAllString(reverseString, -1)[0]
+		firstDigit := findDigitsForward.FindAllString(forwardString, 1)[0]
+		lastDigit := findDigitsBackward.FindAllString(reverseString, 1)[0]
 		// Check both first and last and translate from string to different string
 		switch firstDigit {
 		case "one":
